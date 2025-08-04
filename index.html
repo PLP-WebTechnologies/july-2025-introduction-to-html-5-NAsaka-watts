@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A beginner's web guide for PLP bootcamp: learn about digital literacy, frontend, backend, and how to start web development." />
+  <meta name="keywords" content="web development, HTML5, frontend, backend, accessibility, SEO, roadmap" />
+  <meta name="author" content="Your Name" />
+  <title>Beginner Guide to Web Development</title>
+</head>
+<body style="background-color:#f4f4f4; font-family:Arial, sans-serif; margin:0; padding:0; line-height:1.6;">
+
+  <header style="background-color:#004466; color:white; padding:1em; text-align:center;">
+    <h1>Beginner Guide to Web Development</h1>
+    <p>For PLP Software Engineering (July Cohort) learners exploring how the web works from scratch.</p>
+  </header>
+
+  <nav aria-label="Main navigation" style="background-color:#eee; padding:1em; text-align:center;">
+    <a href="#home" style="margin: 0 15px;">Home</a>
+    <a href="#webdev" style="margin: 0 15px;">Web Dev</a>
+    <a href="#contact" style="margin: 0 15px;">Contact</a>
+  </nav>
+
+  <main style="padding: 2em; max-width: 800px; margin: auto;">
+
+    <!-- HOME SECTION -->
+    <section id="home" aria-labelledby="about-heading">
+      <h2 id="about-heading">About This Page</h2>
+      <p>
+        This page introduces you to the basics of how the web works using simple HTML5.
+        It's a quick overview of <strong>Power Learn Project (PLP)</strong> Web Development Course offering a quick guide into web development, with a focus on structure, accessibility, and SEO.
+      </p>
+
+      <h3>Key Concepts in Web Development</h3>
+      <p>
+        Understanding digital tools is crucial. Semantic HTML makes pages easier to read (for users and search engines).
+        It improves accessibility for screen readers and builds a strong foundation for frontend skills.
+      </p>
+    </section>
+
+    <!-- WEB DEVELOPMENT SECTION -->
+    <section id="webdev" aria-labelledby="webdev-heading">
+      <h2 id="webdev-heading">Breaking Down Web Development</h2>
+
+      <article>
+        <h3>🔹 What is Web Development?</h3>
+        <p>
+          Web development is the process of building and maintaining websites. It has 2 main areas:
+          <strong>Frontend</strong> and <strong>Backend</strong>.
+        </p>
+      </article>
+
+      <article>
+        <h3>🧩 Frontend</h3>
+        <p>
+          This is what users see and interact with in the browser. It involves:
+          <ul>
+            <li>HTML – structure</li>
+            <li>CSS – styling</li>
+            <li>JavaScript – interactivity</li>
+          </ul>
+          Frontend developers may use frameworks like React, Vue, or Angular.
+        </p>
+      </article>
+
+      <article>
+        <h3>🛠️ Backend</h3>
+        <p>
+          This is the server side – managing data, requests, and business logic. Common languages and stacks:
+          <ul>
+            <li>Node.js (JavaScript)</li>
+            <li>Python (Django, Flask)</li>
+            <li>PHP (Laravel)</li>
+            <li>Databases – PostgreSQL, MongoDB, MySQL</li>
+          </ul>
+        </p>
+      </article>
+
+      <article>
+        <h3>📶 Learning Order</h3>
+        <p>
+          For PLP learners starting out:
+          <ol>
+            <li>Learn HTML + CSS (static pages)</li>
+            <li>Add JavaScript (make it dynamic)</li>
+            <li>Understand Git/GitHub (version control)</li>
+            <li>Pick a backend language (Node.js or Python)</li>
+            <li>Learn database basics</li>
+            <li>Learn REST APIs and how frontend talks to backend</li>
+          </ol>
+        </p>
+      </article>
+
+      <article>
+        <h3>🌍 Development Environments</h3>
+        <p>
+          Most beginners start with:
+          <ul>
+            <li>VS Code – editor</li>
+            <li>Live Server – preview HTML pages</li>
+            <li>GitHub – share and deploy code</li>
+          </ul>
+          You can eventually move to frameworks and deployment platforms (e.g. Netlify, Vercel, Heroku).
+        </p>
+      </article>
+
+      <article>
+        <h3>📌 Suggested Roadmap</h3>
+        <p>
+          For self-paced learning on fullstack web development, you can follow this roadmap: 
+          <a href="https://roadmap.sh/" target="_blank">roadmap.sh</a>
+        </p>
+      </article>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact</h2>
+      <p>
+        If you’re part of PLP and would like to collaborate:
+      </p>
+      <ul>
+        <li>Email: <a href="mailto:gwatitwa@kabarak.ac.ke">gwatitwa@kabarak.ac.ke</a></li>
+        <li>GitHub: <a href="https://github.com/NAsaka-watts" target="_blank">github.com/NAsaka-watts</a></li>        
+      </ul>
+    </section>
+
+  </main>
+
+  <footer style="background-color:#004466; color:white; text-align:center; padding:1em;">
+  </footer>
+
+</body>
+</html>
+<script>
+  // Simple script to enhance accessibility
+  document.addEventListener('DOMContentLoaded', () => {
+    const links = document.querySelectorAll('a');
+    links.forEach(link => {
+      link.setAttribute('tabindex', '0'); // Make links focusable
+      link.addEventListener('focus', () => {
+        link.style.outline = '2px solid #004466'; // Highlight focused links
+      });
+      link.addEventListener('blur', () => {
+        link.style.outline = 'none'; // Remove highlight on blur
+      });
+    });
+  });
